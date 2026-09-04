@@ -868,12 +868,12 @@ a {
     border-radius: 50%;
 
     filter: blur(70px);
-    opacity: 0.50;
+    
 
     top: 10%;
     left: 10%;
 
-    animation: luzUno 5s ease-in-out infinite alternate;
+    animation: luzUno 2s ease-in-out infinite alternate;
 }
 
 /* Segunda luz */
@@ -888,18 +888,23 @@ a {
     border-radius: 50%;
 
     filter: blur(65px);
-    opacity: 0.50;
+    opacity: 0.75;
 
     bottom: 10%;
     right: 10%;
 
-    animation: luzDos 10s ease-in-out infinite alternate;
+    animation: luzDos 5s ease-in-out infinite alternate;
 }
 
 .countdown-section {
     position: relative;
     overflow: hidden;
-    background:var(--pink-light);
+     background:
+        linear-gradient(
+            180deg,
+            var(--pink-medium),
+            var(--white)
+        );
     
     
 }
