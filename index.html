@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!-- =========================================
+         CONFIGURACIÓN BÁSICA
+    ========================================== -->
+
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página sea completamente responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descripción para buscadores y redes -->
+    <meta
+        name="description"
+        content="Invitación digital para celebrar los XV años"
+    >
+
+    <title>Mis XV Años | Krystel</title>
+
+
+    <!-- =========================================
+         GOOGLE FONTS
+         
+         Puedes cambiar estas fuentes después.
+    ========================================== -->
+
+    <!-- Fuente elegante para nombres y títulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================
+         ARCHIVOS CSS
+    ========================================== -->
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         PRELOADER
+         
+         Esta pantalla aparece mientras la página
+         termina de cargar.
+    ========================================== -->
+
+    <div class="preloader" id="preloader">
+
+        <div class="preloader-content">
+
+            <div class="loader-flower">
+                ✿
+            </div>
+
+            <p>Cargando invitación...</p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         PANTALLA DE BIENVENIDA
+         
+         Aquí comienza la experiencia.
+         
+         El botón abre la invitación y también
+         intenta iniciar la música.
+    ========================================== -->
+
+    <section class="welcome-screen" id="welcomeScreen">
+
+        
+
+      <!-- <div class="welcome-overlay"></div>--> 
+
+
+        <div class="welcome-content">
+
+            <p class="welcome-small-text">
+                MIS XV AÑOS
+            </p>
+
+
+            <h1 class="welcome-name">
+                Krystel
+            </h1>
+
+
+            <div class="welcome-date">
+
+                <span>03</span>
+
+                <span>•</span>
+
+                <span>OCTUBRE</span>
+
+                <span>•</span>
+
+                <span>2026</span>
+
+            </div>
+
+
+            <button
+                class="btn-primary open-invitation"
+                id="openInvitation"
+            >
+
+                Abrir invitación
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+         
+         Todo el contenido comienza oculto.
+         Se muestra cuando el usuario presiona
+         "Abrir invitación".
+    ========================================== -->
+
+    <main
+
+     
+
+        class="invitation-content"
+        id="invitationContent"
+
+    >
+
+
+        <!-- =====================================
+             BOTÓN DE MÚSICA
+             
+             Flotante y visible durante toda
+             la navegación.
+        ====================================== -->
+
+        <button
+            class="music-button"
+            id="musicButton"
+            aria-label="Reproducir o pausar música"
+        >
+
+            <span id="musicIcon">
+                ♫
+            </span>
+
+        </button>
+
+
+        <!-- =====================================
+             AUDIO
+             
+             Coloca tu archivo dentro de:
+             audio/musica.mp3
+        ====================================== -->
+
+        <audio
+            id="backgroundMusic"
+            loop
+        >
+
+            <source
+                src="audio/musica.mp3"
+                type="audio/mpeg"
+            >
+
+        </audio>
+
+
+
+     <!-- =====================================
+     HERO PRINCIPAL
+     
+     Nueva versión:
+     - Fotografía completa de la XVañera
+     - Flores flotantes conservadas
+     - Nombre debajo de la fotografía
+====================================== -->
+
+<section class="hero-section section">
+
+
+    <!-- =================================
+         FLORES DECORATIVAS
+         
+         Se conservan exactamente para
+         mantener el efecto flotante.
+    ================================== -->
+
+    <div class="floating-flower flower-1">
+        ✿
+    </div>
+
+    <div class="floating-flower flower-2">
+        ✿
+    </div>
+
+
+
+    <!-- =================================
+         CONTENIDO DEL HERO
+    ================================== -->
+
+    <div class="hero-content reveal">
+
+
+        <!-- =================================
+             FOTOGRAFÍA COMPLETA
+             
+             Coloca la fotografía en:
+
+             img/krystel.jpg
+        ================================== -->
+
+        <div class="hero-photo">
+
+            <img
+                src="/img/galeria/foto1.webp"
+                alt="Krystel - Mis XV Años"
+            >
+
+        </div>
+
+
+
+        <!-- =================================
+             TEXTO DEBAJO DE LA FOTOGRAFÍA
+        ================================== -->
+
+        <p class="hero-eyebrow">
+            MIS XV AÑOS
+        </p>
+
+
+        <h2 class="hero-name">
+            Krystel
+        </h2>
+
+
+        <!-- Separador decorativo -->
+
+        <div class="decorative-line">
+            ✦
+        </div>
+
+
+        <!-- Fecha -->
+
+        <p class="hero-date">
+
+            SABADO
+
+            <span>•</span>
+
+            03
+
+            <span>•</span>
+
+            OCTUBRE 2026
+
+        </p>
+
+
+    </div>
+
+</section>
+
+<section>
+   <div class="hero-png">
+
+            <img
+                src="/img/galeria/flores.png"
+              
+            >
+
+        </div>
+</section>
+
+
+<section>
+    <div class="section-frase">
+        <p class="frase-text">Con la bendicíon de Dios y el amor de mi familia, 
+            celebro la alegría de cumplir mis XV años y deseo que
+            formes parte de este día inolvidable.
+        </p>
+    </div>
+</section>
+
+   <!-- =====================================
+             PADRES Y PADRINOS
+        ====================================== -->
+
+       
+
+
+          <h2 class="section-title-countdown" >
+                   ¡Mis 15 años!
+                </h2>
+
+        <section class="family-section section">
+
+     
+
+            <div class="section-container family-grid">
+
+
+                <!-- PADRES -->
+
+                <article class="family-card reveal">
+
+                    <div class="card-icon">
+                        ♡
+                    </div>
+
+
+                    <p class="section-subtitle">
+                        CON EL AMOR DE
+                    </p>
+
+
+                    <h2 class="section-title">
+                        Mis Padres
+                    </h2>
+
+
+                    <p class="family-name">
+
+                        Roberto Rodriguez Perez
+
+                    </p>
+
+
+                    <span class="family-and">
+                        &
+                    </span>
+
+
+                    <p class="family-name">
+
+                        Leonor Azucena Wong Valdez
+
+                    </p>
+
+
+            </div>
+
+                     <!-- =================================
+         FLORES DECORATIVAS
+         
+         Se conservan exactamente para
+         mantener el efecto flotante.
+    ================================== -->
+
+    <div class="floating-flower flower-1">
+        ✿
+    </div>
+
+    <div class="floating-flower flower-2">
+        ✿
+    </div>
+
+        </section>
+
+
+
+
+
+        <!-- =====================================
+             CUENTA REGRESIVA
+             
+             La fecha se configura dentro de:
+             js/countdown.js
+        ====================================== -->
+
+         
+
+        <section
+            class="countdown-section section"
+            id="countdown"
+        >
+
+            <div class="section-container reveal">
+
+                
+
+                <img src="/img/galeria/lazo.png" class="reloj">
+                <h2 class="section-title" >
+                   ¡Aparta la fecha!
+                </h2>
+
+                <p class="section-subtitle">
+                    SOLO FALTAN
+                </p>
+
+
+             
+
+
+                <div class="countdown-grid">
+
+
+                    <div class="countdown-item">
+
+                        <span
+                            class="countdown-number"
+                            id="days"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-label">
+                            Días
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="countdown-item">
+
+                        <span
+                            class="countdown-number"
+                            id="hours"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-label">
+                            Hrs
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="countdown-item">
+
+                        <span
+                            class="countdown-number"
+                            id="minutes"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-label">
+                            Min
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="countdown-item">
+
+                        <span
+                            class="countdown-number"
+                            id="seconds"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-label">
+                            Seg
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+       
+
+        </section>
+
+
+
+     
+
+        <!-- =====================================
+             CEREMONIA
+        ====================================== -->
+
+        <section class="event-section section">
+
+            <div class="section-container event-grid">
+
+
+                <article class="event-card reveal">
+
+                    <div class="event-icon">
+
+                        <img src="/img/galeria/misa.png">
+
+                    </div>
+
+
+                    <p class="section-subtitle">
+                        CEREMONIA RELIGIOSA
+                    </p>
+
+
+                    <h2 class="event-title">
+
+                        Parroquia Nuestra Señora de Guadalupe
+
+                    </h2>
+
+
+                    <p class="event-info">
+
+                        7:00 PM
+
+                    </p>
+
+
+                    <p class="event-address">
+
+                        Dirección de la iglesia
+
+                    </p>
+
+
+                    <!-- Cambia # por el enlace real -->
+                    <a
+                        href="#"
+                        class="btn-secondary"
+                        target="_blank"
+                    >
+
+                        Ver ubicación
+
+                    </a>
+
+                </article>
+
+
+
+                <!-- =================================
+                     RECEPCIÓN
+                ================================== -->
+
+                <article class="event-card reveal">
+
+                    <div class="event-icon">
+
+                        <img src="/img/galeria/recepcion.png">
+
+                    </div>
+
+
+                    <p class="section-subtitle">
+                        RECEPCIÓN
+                    </p>
+
+
+                    <h2 class="event-title">
+
+                        Salón Candilejas
+
+                    </h2>
+
+
+                    <p class="event-info">
+
+                        8:30 PM
+
+                    </p>
+
+
+                    <p class="event-address">
+
+                        Dirección del salón
+
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="btn-secondary"
+                        target="_blank"
+                    >
+
+                        Cómo llegar
+
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ITINERARIO
+        ====================================== -->
+
+        <section class="itinerary-section section">
+
+            <div class="section-container">
+
+
+                <p class="section-subtitle reveal">
+                    ACOMPAÑAME
+                </p>
+
+
+                <h2 class="section-title reveal">
+                    Itinerario
+                </h2>
+
+
+                <div class="timeline">
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-time">
+                            7:00 PM
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Ceremonia
+                            </h3>
+
+                            <p>
+                                Comenzamos esta hermosa celebración.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-time">
+                            8:30 PM
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Recepción
+                            </h3>
+
+                            <p>
+                                Recibimos a nuestros invitados.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-time">
+                            9:00 PM
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Cena
+                            </h3>
+
+                            <p>
+                                Compartiremos una deliciosa cena.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-time">
+                            10:00 PM
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Vals
+                            </h3>
+
+                            <p>
+                                Uno de los momentos más especiales.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-time">
+                            10:30 PM
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                ¡A bailar!
+                            </h3>
+
+                            <p>
+                                La fiesta comienza.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CÓDIGO DE VESTIMENTA
+        ====================================== -->
+
+        <section class="dress-code-section section">
+
+            <div class="section-container reveal">
+
+                <p class="section-subtitle">
+                    CÓDIGO DE VESTIMENTA
+                </p>
+
+
+                <div class="dress-code-icon">
+
+                    <img src="/img/galeria/dresscode4.png">
+
+                </div>
+
+
+                
+
+
+                <h2 class="section-title">
+
+                    ¡Brilla con tu mejor look!
+
+                </h2>
+
+
+                <p class="dress-code-text">
+
+                    Me encantará verte elegante
+                    para celebrar juntos esta noche
+                    tan especial.
+
+                </p>
+
+
+                <p class="dress-code-note">
+
+                    Agradecemos evitar el color rosa,
+                    reservado para la quinceañera.
+
+                </p>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             LLUVIA DE SOBRES
+        ====================================== -->
+
+        <section class="gift-section section">
+
+            <div class="section-container reveal">
+
+                <!--<p class="section-subtitle">
+
+                    TU PRESENCIA ES MI MEJOR REGALO
+
+                </p> -->
+
+                <div
+                    class="envelope"
+                    id="envelope"
+                >
+
+                    <div class="envelope-flap"></div>
+
+                    <div class="envelope-heart">
+                        ♡
+                    </div>
+
+                </div>
+
+                <p class="gift-text">
+
+                    Mi mejor regalo es que compartas
+                    conmigo este gran día. Si deseas obsequiarme un regalo que mejor
+                    que con una
+
+                </p>
+                
+
+
+                <h2 class="section-title">
+
+                    Lluvia de sobres
+
+                </h2>
+
+
+                
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             GALERÍA
+             
+             Agrega las imágenes dentro de:
+             img/galeria/
+        ====================================== -->
+
+        <section
+            class="gallery-section section"
+            id="gallery"
+        >
+
+            <div class="section-container">
+
+
+                <p class="section-subtitle reveal">
+                    MIS RECUERDOS
+                </p>
+
+
+                <h2 class="section-title reveal">
+                    Galería
+                </h2>
+
+
+                <div class="gallery-grid">
+
+
+                    <button
+                        class="gallery-item reveal"
+                        data-image="img/galeria/foto1.webp"
+                    >
+
+                        <img
+                            src="img/galeria/foto1.webp"
+                            alt="Fotografía de la quinceañera 1"
+                            loading="lazy"
+                        >
+
+                    </button>
+
+
+
+                    <button
+                        class="gallery-item reveal"
+                        data-image="img/galeria/foto2.webp"
+                    >
+
+                        <img
+                            src="img/galeria/foto2.webp"
+                            alt="Fotografía de la quinceañera 2"
+                            loading="lazy"
+                        >
+
+                    </button>
+
+
+
+                    <button
+                        class="gallery-item reveal"
+                        data-image="img/galeria/foto3.webp"
+                    >
+
+                        <img
+                            src="img/galeria/foto3.webp"
+                            alt="Fotografía de la quinceañera 3"
+                            loading="lazy"
+                        >
+
+                    </button>
+
+
+
+                    <button
+                        class="gallery-item reveal"
+                        data-image="img/galeria/foto4.webp"
+                    >
+
+                        <img
+                            src="img/galeria/foto4.webp"
+                            alt="Fotografía de la quinceañera 4"
+                            loading="lazy"
+                        >
+
+                    </button>
+
+
+
+                    <button
+                        class="gallery-item reveal"
+                        data-image="img/galeria/foto5.webp"
+                    >
+
+                        <img
+                            src="img/galeria/foto5.webp"
+                            alt="Fotografía de la quinceañera 5"
+                            loading="lazy"
+                        >
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CONFIRMACIÓN
+        ====================================== -->
+
+        <section class="rsvp-section section">
+
+            <div class="section-container reveal">
+
+
+                <p class="section-subtitle">
+                    ¿PODRÁS ACOMPAÑARME?
+                </p>
+
+
+                <h2 class="section-title">
+
+                    Confirma tu asistencia
+
+                </h2>
+
+
+                <p class="rsvp-text">
+
+                    Tu presencia hará este día
+                    aún más especial.
+
+                </p>
+
+
+                <!--
+                    Cambia el número de teléfono.
+                    Ejemplo:
+                    https://wa.me/528661234567
+                -->
+
+                <a
+                    href="https://wa.me/5210000000000"
+                    target="_blank"
+                    class="btn-primary"
+                >
+
+                    Confirmar por WhatsApp
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             MENSAJE FINAL
+        ====================================== -->
+
+        <section class="final-section section">
+
+            <div class="section-container reveal">
+
+
+                <div class="flower-divider">
+
+                    ❀ ✦ ❀
+
+                </div>
+
+
+                <p class="final-message">
+
+                    Será un honor compartir
+                    este día contigo.
+
+                </p>
+
+
+                <h2 class="final-name">
+
+                    Krystel
+
+                </h2>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             FOOTER
+        ====================================== -->
+
+        <footer class="footer">
+
+            <p>
+                Con cariño
+            </p>
+
+
+            <h2>
+                Krystel
+            </h2>
+
+
+            <span>
+                XV Años • 2026
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         LIGHTBOX DE LA GALERÍA
+         
+         Permite abrir las fotografías.
+    ========================================== -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+    >
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Cerrar imagen"
+        >
+            ×
+        </button>
+
+
+        <button
+            class="lightbox-prev"
+            id="lightboxPrev"
+            aria-label="Imagen anterior"
+        >
+            ❮
+        </button>
+
+
+        <img
+            src=""
+            alt="Imagen ampliada"
+            id="lightboxImage"
+        >
+
+
+        <button
+            class="lightbox-next"
+            id="lightboxNext"
+            aria-label="Imagen siguiente"
+        >
+            ❯
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+         
+         Se coloca al final para que el HTML
+         cargue antes que los scripts.
+    ========================================== -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/countdown.js"></script>
+
+    <script src="js/gallery.js"></script>
+
+    <script src="js/music.js"></script>
+
+    <script src="js/effects.js"></script>
+
+
+</body>
+</html>

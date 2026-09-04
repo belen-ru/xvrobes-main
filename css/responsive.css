@@ -1,0 +1,346 @@
+/* =========================================================
+   TABLETS Y PANTALLAS MEDIANAS
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .family-grid,
+    .event-grid {
+
+        grid-template-columns:
+            1fr;
+
+        max-width:
+            600px;
+
+        margin:
+            auto;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   MÓVILES
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .countdown-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+
+    }
+
+
+    /* Timeline móvil */
+
+    .timeline::before {
+
+        left:
+            8px;
+
+    }
+
+
+    .timeline-item {
+
+        grid-template-columns:
+            20px 1fr;
+
+        gap:
+            15px;
+
+        margin-bottom:
+            35px;
+
+    }
+
+
+    .timeline-time {
+
+        grid-column:
+            2;
+
+        grid-row:
+            1;
+
+        text-align:
+            left;
+
+        padding:
+            0;
+
+        font-size:
+            0.85rem;
+
+    }
+
+
+    .timeline-dot {
+
+        grid-column:
+            1;
+
+        grid-row:
+            1 / span 2;
+
+    }
+
+
+    .timeline-content {
+
+        grid-column:
+            2;
+
+        grid-row:
+            2;
+
+        padding:
+            0;
+
+    }
+
+
+    .lightbox-prev {
+
+        left:
+            10px;
+
+    }
+
+
+    .lightbox-next {
+
+        right:
+            10px;
+
+    }
+
+
+    .lightbox button {
+
+        font-size:
+            1.5rem;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   MÓVILES PEQUEÑOS
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .welcome-date {
+
+        font-size:
+            0.65rem;
+
+        gap:
+            6px;
+
+    }
+
+
+    .countdown-item {
+
+        padding:
+            20px 10px;
+
+    }
+
+
+    .section {
+
+        padding-left:
+            15px;
+
+        padding-right:
+            15px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   PANTALLAS GRANDES
+========================================================= */
+
+@media (min-width: 1600px) {
+
+    :root {
+
+        --container-width:
+            1300px;
+
+    }
+
+}
+
+/* =========================================================
+   HERO - MÓVILES
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .hero-section {
+
+        min-height:
+            100svh;
+
+        padding:
+            60px 15px 0px 15px;
+
+    }
+
+
+    .hero-content {
+
+        padding:
+            30px 10px;
+
+    }
+
+
+    .hero-photo {
+
+        width:
+            100%;
+
+        margin-bottom:
+            25px;
+
+    }
+
+
+    .hero-photo img {
+
+        max-width:
+            92vw;
+
+        max-height:
+            65vh;
+
+        border-radius:
+            8px;
+
+    }
+
+
+    .hero-name {
+
+        font-size:
+            clamp(
+                4.5rem,
+                18vw,
+                7rem
+            );
+
+    }
+
+
+    .hero-eyebrow {
+
+        letter-spacing:
+            3px;
+
+    }
+
+
+    .hero-date {
+
+        font-size:
+            1rem;
+
+    }
+
+
+    .hero-section .floating-flower {
+
+        font-size:
+            4.5rem;
+
+    }
+
+
+    .hero-section .flower-1 {
+
+        top:
+            5%;
+
+        left:
+            -25px;
+
+    }
+
+
+    .hero-section .flower-2 {
+
+        bottom:
+            5%;
+
+        right:
+            -25px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   TELÉFONOS MUY PEQUEÑOS
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .hero-photo img {
+
+        max-width:
+            88vw;
+
+        max-height:
+            58vh;
+
+    }
+
+
+    .hero-name {
+
+        font-size:
+            4.2rem;
+
+    }
+
+
+    .hero-eyebrow {
+
+        font-size:
+            0.6rem;
+
+        letter-spacing:
+            2.5px;
+
+    }
+
+
+    .hero-date {
+
+        font-size:
+            0.9rem;
+
+    }
+
+}
