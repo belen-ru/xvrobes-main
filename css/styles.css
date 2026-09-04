@@ -1248,7 +1248,8 @@ a {
         1;
 
     color:var(--rose-gold);
-    opacity: 80;
+    opacity: 0.8;
+  
 
     font-size:
         clamp(
@@ -1486,6 +1487,12 @@ a {
 
 }
 
+.inti-png{
+    background-color: white;
+  
+    
+}
+
 
 
 /* =========================================================
@@ -1494,21 +1501,43 @@ a {
 
 .dress-code-section {
 
-    background:
-        var(--pink-light);
+background-image: url(/img/galeria/portada1.webp),
+    linear-gradient(
+        180deg,
+        var(--pink-light),
+        var(--white)
+    );
+
+    background-size:
+        cover;
+
+    background-position:
+        center;
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
 
 }
 
+.section-title-dress-code{
+    font-family: "Allura", cursive;
+    font-size: clamp(4.5rem, 7vw, 5rem);
+    font-weight: 500;
+    color: var(--pink-light);
+    text-shadow: var(--rose-gold) 1px 1px 5px;
 
-.dress-code-icon {
-
-    font-size:
-        4rem;
-
-    margin-bottom:
-        20px;
-
+    text-align: center;
+   
+    
+    margin-top: 40px;
+    animation: fadeIn 3s ease-in-out;
 }
+
+
+
 
 
 .dress-code-text {
@@ -1534,11 +1563,17 @@ a {
         25px;
 
     color:
-        var(--rose-gold-dark);
+        var(--rose-gold);
 
     font-weight:
         500;
 
+}
+
+.dress-code-icon  {
+   
+    animation: fadeIn 3s ease-in;
+    
 }
 
 
@@ -1665,6 +1700,10 @@ a {
     color:
         var(--text-light);
 
+}
+
+.marco-2{
+    margin-left: 10px;
 }
 
 
@@ -2264,8 +2303,8 @@ a {
     z-index:
         1;
 
-    color:
-        rgba(114, 75, 81, 0.25);
+    color:var(--rose-gold);
+    opacity: 0.5;
 
     font-size:
         clamp(
