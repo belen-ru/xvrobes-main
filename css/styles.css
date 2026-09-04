@@ -1277,6 +1277,61 @@ a {
 }
 
 
+/* Primera luz */
+.itinerary-section::before {
+    content: "";
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    background: #e8b6a8;
+    border-radius: 50%;
+
+    filter: blur(70px);
+    
+
+    top: 10%;
+    left: 10%;
+
+    animation: luzUno 5s ease-in-out infinite alternate;
+}
+
+/* Segunda luz */
+.itinerary-section::after {
+    content: "";
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    background: var(--pink-medium);
+    border-radius: 50%;
+
+    filter: blur(70px);
+   
+    bottom: 10%;
+    right: 10%;
+
+    animation: luzDos 8s ease-in-out infinite alternate;
+}
+
+.itinerary-section{
+    position: relative;
+    overflow: hidden;
+   background-color: var(--white);
+    
+}
+
+.itinerary-section > * {
+    position: relative;
+    overflow: hidden;
+    
+    z-index: 2;
+}
+
+
+
 
 /* Flor inferior derecha */
 
