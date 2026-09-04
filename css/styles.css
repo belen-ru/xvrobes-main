@@ -901,6 +901,7 @@ a {
     overflow: hidden;
     background:var(--pink-light);
     
+    
 }
 
 .countdown-section > * {
@@ -908,6 +909,12 @@ a {
     overflow: hidden;
     
     z-index: 2;
+}
+
+.lazo{
+    margin-bottom: 15px;
+     animation: fadeIn 1s ease-in-out;
+
 }
 
 
@@ -944,7 +951,9 @@ a {
 
         padding: 15px;
 
-        border-radius: 18px;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 0.5px solid var(--pink-medium);
 
    }
 
@@ -1159,6 +1168,8 @@ a {
         var(--shadow-soft);
 
 }
+
+
 
 
 .event-icon {
