@@ -888,8 +888,7 @@ a {
     border-radius: 50%;
 
     filter: blur(65px);
-    opacity: 0.60;
-
+    opacity: 0.55;
     bottom: 10%;
     right: 10%;
 
@@ -1240,14 +1239,97 @@ a {
    ITINERARIO
 ========================================================= */
 
+.itinerary-section .floating-flower {
 
+    position:
+        absolute;
 
-.itinerary-section {
+    z-index:
+        1;
 
-    background:
-        var(--white);
+    color:var(--rose-gold);
+    opacity: 80;
+
+    font-size:
+        clamp(
+            4rem,
+            9vw,
+            8rem
+        );
+
+    pointer-events:
+        none;
 
 }
+
+
+
+/* Flor superior izquierda */
+
+.itinerary-section .flower-1 {
+
+    top:
+        8%;
+
+    left:
+        5%;
+
+}
+
+
+
+/* Flor inferior derecha */
+
+.itinerary-section .flower-2 {
+
+    bottom:
+        8%;
+
+    right:
+        5%;
+
+}
+
+/* Primera luz */
+.itinerary-section::before {
+    content: "";
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    background: #e8b6a8;
+    border-radius: 50%;
+
+    filter: blur(70px);
+    
+
+    top: 10%;
+    left: 10%;
+
+    animation: luzUno 2s ease-in-out infinite alternate;
+}
+
+/* Segunda luz */
+.itinerary-section::after {
+    content: "";
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    background: var(--rose-gold);
+    border-radius: 50%;
+
+    filter: blur(65px);
+    opacity: 0.5;
+    bottom: 10%;
+    right: 10%;
+
+    animation: luzDos 8s ease-in-out infinite alternate;
+}
+
+
 
 
 .timeline {
@@ -2167,12 +2249,7 @@ a {
         1;
 
     color:
-        rgba(
-            183,
-            110,
-            121,
-            0.25
-        );
+        rgba(114, 75, 81, 0.25);
 
     font-size:
         clamp(
