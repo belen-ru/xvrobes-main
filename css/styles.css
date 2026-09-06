@@ -2518,6 +2518,12 @@ background-image: url(/img/galeria/portada1.webp),
             0.94
         );
 
+        background-color: var(--white);
+
+        margin: 20px;
+        border-radius: var(--radius-medium);
+        box-shadow: var(--pink-medium) 0px 0px 5px 0px;
+
 }
 
 
@@ -2549,6 +2555,8 @@ background-image: url(/img/galeria/portada1.webp),
     text-align:
         left;
 
+      
+
 }
 
 
@@ -2561,6 +2569,10 @@ background-image: url(/img/galeria/portada1.webp),
 
     margin-bottom:
         28px;
+
+        border: transparent;
+
+        
 
 }
 
@@ -2583,7 +2595,7 @@ background-image: url(/img/galeria/portada1.webp),
         10px;
 
     font-family:
-        "Cormorant Garamond",
+        "Montserrat",
         serif;
 
     font-size:
@@ -2642,7 +2654,7 @@ background-image: url(/img/galeria/portada1.webp),
         16px 18px;
 
     font-family:
-        "Cormorant Garamond",
+        "Montserrat",
         serif;
 
     font-size:
