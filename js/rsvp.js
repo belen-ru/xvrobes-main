@@ -93,10 +93,10 @@ rsvpForm.addEventListener(
             );
 
 
-        const comentarios =
+      /*  const comentarios =
             formData
                 .get("comentarios")
-                .trim();
+                .trim();  */
 
 
 
@@ -204,10 +204,9 @@ rsvpForm.addEventListener(
                                 asistencia,
 
                             personas:
-                                cantidadPersonas,
+                                cantidadPersonas
 
-                            comentarios:
-                                comentarios
+                          
 
                         })
 
@@ -220,7 +219,7 @@ rsvpForm.addEventListener(
             ------------------------------------- */
 
             showMessage(
-                "¡Gracias! Tu confirmación fue registrada correctamente. 💗",
+                "¡Gracias! Tu confirmación fue registrada correctamente. Nos vemos ese gran día. 💗",
                 "success"
             );
 
@@ -237,7 +236,7 @@ rsvpForm.addEventListener(
 
 
             showMessage(
-                "No pudimos registrar tu confirmación. Intenta nuevamente.",
+                "No se pudo registrar tu confirmación. Intenta nuevamente.",
                 "error"
             );
 
