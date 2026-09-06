@@ -2496,6 +2496,545 @@ background-image: url(/img/galeria/portada1.webp),
 
 }
 
+/*=========================================================
+    FORMULACION CONFIRMACION
+========================================================= */
+/* =========================================================
+   FORMULARIO DE CONFIRMACIÓN
+========================================================= */
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.rsvp-section {
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.94
+        );
+
+}
+
+
+.rsvp-section
+.section-container {
+
+    max-width:
+        850px;
+
+}
+
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.rsvp-form {
+
+    width:
+        min(
+            100%,
+            620px
+        );
+
+    margin:
+        45px auto 0;
+
+    text-align:
+        left;
+
+}
+
+
+
+/* =========================================
+   GRUPO
+========================================= */
+
+.form-group {
+
+    margin-bottom:
+        28px;
+
+}
+
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.form-group label,
+.form-group legend {
+
+    display:
+        block;
+
+    width:
+        100%;
+
+    margin-bottom:
+        10px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        1.25rem;
+
+    font-weight:
+        500;
+
+    color:
+        var(--text);
+
+}
+
+
+.form-group legend {
+
+    padding:
+        0;
+
+}
+
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+
+    width:
+        100%;
+
+    border:
+        1px solid
+        rgba(
+            183,
+            110,
+            121,
+            0.22
+        );
+
+    border-radius:
+        10px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.9
+        );
+
+    padding:
+        16px 18px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        1.15rem;
+
+    color:
+        var(--text);
+
+    outline:
+        none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.form-group textarea {
+
+    resize:
+        vertical;
+
+    min-height:
+        125px;
+
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color:
+        #b8b0b2;
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    border-color:
+        var(--rose-gold);
+
+    background:
+        var(--white);
+
+    box-shadow:
+        0 0 0 4px
+        rgba(
+            183,
+            110,
+            121,
+            0.08
+        );
+
+}
+
+
+
+/* =========================================
+   RADIO BUTTONS
+========================================= */
+
+.radio-options {
+
+    display:
+        flex;
+
+    gap:
+        15px;
+
+}
+
+
+.radio-card {
+
+    position:
+        relative;
+
+    display:
+        flex !important;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    width:
+        130px !important;
+
+    margin:
+        0 !important;
+
+    padding:
+        13px 18px;
+
+    border:
+        1px solid
+        rgba(
+            183,
+            110,
+            121,
+            0.2
+        );
+
+    border-radius:
+        10px;
+
+    background:
+        var(--white);
+
+    cursor:
+        pointer;
+
+    transition:
+        all 0.3s ease;
+
+}
+
+
+.radio-card:hover {
+
+    border-color:
+        var(--rose-gold-light);
+
+    background:
+        var(--pink-pale);
+
+}
+
+
+.radio-card input {
+
+    position:
+        absolute;
+
+    opacity:
+        0;
+
+    pointer-events:
+        none;
+
+}
+
+
+.radio-custom {
+
+    width:
+        18px;
+
+    height:
+        18px;
+
+    border:
+        1.5px solid
+        var(--rose-gold);
+
+    border-radius:
+        50%;
+
+    position:
+        relative;
+
+    flex-shrink:
+        0;
+
+}
+
+
+.radio-custom::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        8px;
+
+    height:
+        8px;
+
+    left:
+        50%;
+
+    top:
+        50%;
+
+    transform:
+        translate(
+            -50%,
+            -50%
+        )
+        scale(0);
+
+    border-radius:
+        50%;
+
+    background:
+        var(--rose-gold);
+
+    transition:
+        transform 0.2s ease;
+
+}
+
+
+.radio-card input:checked
++ .radio-custom::after {
+
+    transform:
+        translate(
+            -50%,
+            -50%
+        )
+        scale(1);
+
+}
+
+
+.radio-card:has(input:checked) {
+
+    border-color:
+        var(--rose-gold);
+
+    background:
+        var(--pink-pale);
+
+    box-shadow:
+        0 5px 20px
+        rgba(
+            183,
+            110,
+            121,
+            0.08
+        );
+
+}
+
+
+.radio-text {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        1.1rem;
+
+}
+
+
+
+/* =========================================
+   TEXTO DE AYUDA
+========================================= */
+
+.input-help {
+
+    display:
+        block;
+
+    margin-top:
+        7px;
+
+    font-size:
+        0.68rem;
+
+    color:
+        var(--text-light);
+
+}
+
+
+
+/* =========================================
+   MENSAJE
+========================================= */
+
+.form-message {
+
+    min-height:
+        25px;
+
+    margin-bottom:
+        15px;
+
+    font-size:
+        0.85rem;
+
+    text-align:
+        center;
+
+}
+
+
+.form-message.success {
+
+    color:
+        #55745c;
+
+}
+
+
+.form-message.error {
+
+    color:
+        #a6535d;
+
+}
+
+
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.rsvp-submit {
+
+    width:
+        100%;
+
+    border:
+        0;
+
+}
+
+
+.rsvp-submit:disabled {
+
+    opacity:
+        0.65;
+
+    cursor:
+        not-allowed;
+
+    transform:
+        none;
+
+}
+
+
+
+/* =========================================
+   INDICADOR DE CARGA
+========================================= */
+
+.submit-loader {
+
+    display:
+        none;
+
+    animation:
+        formSpinner
+        1s linear
+        infinite;
+
+}
+
+
+.rsvp-submit.loading
+.submit-loader {
+
+    display:
+        inline-block;
+
+}
+
+
+@keyframes formSpinner {
+
+    from {
+
+        transform:
+            rotate(0);
+
+    }
+
+    to {
+
+        transform:
+            rotate(360deg);
+
+    }
+
+}
+
+
 
 
 

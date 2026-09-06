@@ -1105,55 +1105,244 @@
 
 
 
+      <!--========================================
+            CONFIRMACION                          
+        =========================================-->
+
         <!-- =====================================
-             CONFIRMACIÓN
-        ====================================== -->
+     CONFIRMACIÓN DE ASISTENCIA
+====================================== -->
 
-        <section class="rsvp-section section">
+<section
+    class="rsvp-section section"
+    id="confirmacion"
+>
 
-            <div class="section-container reveal">
-
-
-                <p class="section-subtitle">
-                    ¿PODRÁS ACOMPAÑARME?
-                </p>
+    <div class="section-container reveal">
 
 
-                <h2 class="section-title">
+        <!-- =================================
+             ENCABEZADO
+        ================================== -->
 
-                    Confirma tu asistencia
-
-                </h2>
-
-
-                <p class="rsvp-text">
-
-                    Tu presencia hará este día
-                    aún más especial.
-
-                </p>
+        <p class="section-subtitle">
+            ¿PODRÁS ACOMPAÑARME?
+        </p>
 
 
-                <!--
-                    Cambia el número de teléfono.
-                    Ejemplo:
-                    https://wa.me/528661234567
-                -->
+        <h2 class="section-title">
+            Confirmación de Asistencia
+        </h2>
 
-                <a
-                    href="https://wa.me/8617987330"
-                    target="_blank"
-                    class="btn-primary"
+
+        <p class="rsvp-text">
+
+            Tu presencia hará este día
+            aún más especial.
+
+        </p>
+
+
+
+        <!-- =================================
+             FORMULARIO
+        ================================== -->
+
+        <form
+            class="rsvp-form"
+            id="rsvpForm"
+        >
+
+
+            <!-- =================================
+                 NOMBRE
+            ================================== -->
+
+            <div class="form-group">
+
+                <label for="guestName">
+                    Nombre
+                </label>
+
+
+                <input
+                    type="text"
+                    id="guestName"
+                    name="nombre"
+                    placeholder="Escribe tu nombre"
+                    autocomplete="name"
+                    required
                 >
-
-                    Confirmar por WhatsApp
-
-                </a>
-
 
             </div>
 
-        </section>
+
+
+            <!-- =================================
+                 ASISTENCIA
+                 
+                 RADIO BUTTONS
+            ================================== -->
+
+            <fieldset class="form-group">
+
+                <legend>
+                    ¿Asistirás?
+                </legend>
+
+
+                <div class="radio-options">
+
+
+                    <!-- SÍ -->
+
+                    <label class="radio-card">
+
+                        <input
+                            type="radio"
+                            name="asistencia"
+                            value="Sí"
+                            required
+                        >
+
+                        <span class="radio-custom"></span>
+
+                        <span class="radio-text">
+                            Sí
+                        </span>
+
+                    </label>
+
+
+
+                    <!-- NO -->
+
+                    <label class="radio-card">
+
+                        <input
+                            type="radio"
+                            name="asistencia"
+                            value="No"
+                            required
+                        >
+
+                        <span class="radio-custom"></span>
+
+                        <span class="radio-text">
+                            No
+                        </span>
+
+                    </label>
+
+
+                </div>
+
+            </fieldset>
+
+
+
+            <!-- =================================
+                 NÚMERO DE PERSONAS
+            ================================== -->
+
+            <div class="form-group">
+
+                <label for="guestCount">
+                    ¿Cuántas personas asistirán?
+                </label>
+
+
+                <input
+                    type="number"
+                    id="guestCount"
+                    name="personas"
+                    placeholder="Escribe el número de personas"
+                    min="1"
+                    max="20"
+                    inputmode="numeric"
+                    required
+                >
+
+
+                <small class="input-help">
+                    Incluyéndote a ti.
+                </small>
+
+            </div>
+
+
+
+            <!-- =================================
+                 COMENTARIOS
+            ================================== -->
+
+            <div class="form-group">
+
+                <label for="guestMessage">
+                    Comentarios y Felicitaciones
+                </label>
+
+
+                <textarea
+                    id="guestMessage"
+                    name="comentarios"
+                    rows="4"
+                    maxlength="500"
+                    placeholder="Escribe tus felicitaciones o comentarios aquí..."
+                ></textarea>
+
+
+                <small class="input-help">
+                    Máximo 500 caracteres.
+                </small>
+
+            </div>
+
+
+
+            <!-- =================================
+                 MENSAJE DE RESPUESTA
+            ================================== -->
+
+            <div
+                class="form-message"
+                id="formMessage"
+                role="alert"
+                aria-live="polite"
+            ></div>
+
+
+
+            <!-- =================================
+                 BOTÓN
+            ================================== -->
+
+            <button
+                type="submit"
+                class="btn-primary rsvp-submit"
+                id="rsvpSubmit"
+            >
+
+                <span id="submitText">
+                    Confirmar
+                </span>
+
+                <span
+                    class="submit-loader"
+                    id="submitLoader"
+                    aria-hidden="true"
+                >
+                    ⟳
+                </span>
+
+            </button>
+
+
+        </form>
+
+    </div>
+
+</section>
 
 
 
@@ -1270,6 +1459,8 @@
     <script src="js/music.js"></script>
 
     <script src="js/effects.js"></script>
+
+    <script src="/js/rsvp.js"></script>
 
 
 </body>
